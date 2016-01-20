@@ -41,6 +41,14 @@ class Mage_Cms_IndexController extends Mage_Core_Controller_Front_Action
      */
     public function indexAction($coreRoute = null)
     {
+        Zend_Debug::dump(
+//            Mage::getModel('catalog/product')
+//            Mage::app()->getLayout()->createBlock('catalog/product')
+//            Mage::app()->getLayout()->createBlock('catalog/product_view')
+//            Mage::getResourceModel('catalog/product')
+//            Mage::helper('sales')
+            Mage::helper('customer/address')
+        );
         $pageId = Mage::getStoreConfig(Mage_Cms_Helper_Page::XML_PATH_HOME_PAGE);
         if (!Mage::helper('cms/page')->renderPage($this, $pageId)) {
             $this->_forward('defaultIndex');
