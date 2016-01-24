@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<!-- Tutorial_L5Excercise.xml -->
+<config>
+    <modules>
+        <!-- Note the <NAMESPACE_MODULENAME> node below -->
+        <Tutorial_L5Excercise>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Log/>
+            </depends>
+        </Tutorial_L5Excercise>
+    </modules>
+</config>

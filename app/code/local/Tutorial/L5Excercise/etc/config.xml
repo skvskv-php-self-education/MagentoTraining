@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <modules>
+        <Tutorial_L5Excercise>
+            <version>0.0.1.0</version>
+            <innerVersion>0</innerVersion>
+        </Tutorial_L5Excercise>
+    </modules>
+    <global>
+        <models>
+            <tutorial_l5excercise>
+                <class>Tutorial_L5Excercise_Model</class>
+            </tutorial_l5excercise>
+        </models>
+        <helpers>
+            <tutorial_l5excercise>
+                <class>Tutorial_L5Excercise_Helper</class>
+            </tutorial_l5excercise>
+        </helpers>
+        <blocks>
+            <tutorial_l5excercise>
+                <class>Tutorial_L5Excercise_Block</class>
+            </tutorial_l5excercise>
+        </blocks>
+    </global>
+    <frontend>
+        <routers>
+            <Tutorial_L5Excercise>
+                <use>standard</use>
+                <args>
+                    <frontName>tl5e</frontName>
+                    <module>Tutorial_L5Excercise</module>
+                </args>
+            </Tutorial_L5Excercise>
+        </routers>
+    </frontend>
+</config>
