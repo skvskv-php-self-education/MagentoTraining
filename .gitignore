@@ -133,5 +133,6 @@ var/
 /app/etc/modules/Mage_Downloadexports.xml
 /.idea
 /rp_attributes
-
-
+tmp*.*
+*.tmp
+*.*~
