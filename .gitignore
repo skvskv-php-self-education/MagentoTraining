@@ -132,7 +132,11 @@ var/
 /app/etc/modules/Rp_Importexportattributes.xml
 /app/etc/modules/Mage_Downloadexports.xml
 /.idea
+/app/code/local
+/app/etc/modules
+/app/design/frontend
 /rp_attributes
 tmp*.*
 *.tmp
+/skin/frontend
 *.*~
