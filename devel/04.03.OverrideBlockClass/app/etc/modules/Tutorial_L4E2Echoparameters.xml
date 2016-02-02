@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Tutorial_L4E2Echoparameters.xml -->
+<config>
+    <modules>
+        <!-- Note the <NAMESPACE_MODULENAME> node below -->
+        <Tutorial_L4E2Echoparameters>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+            </depends>
+        </Tutorial_L4E2Echoparameters>
+    </modules>
+</config>

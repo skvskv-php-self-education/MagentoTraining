@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <modules>
+        <Tutorial_L4E2Echoparameters>
+            <version>0.0.1.0</version>
+            <innerVersion>0</innerVersion>
+        </Tutorial_L4E2Echoparameters>
+    </modules>
+    <global>
+        <models>
+            <tutorial_l4e2echoparameters>
+                <class>Tutorial_L4E2Echoparameters_Model</class>
+            </tutorial_l4e2echoparameters>
+        </models>
+        <helpers>
+            <tutorial_l4e2echoparameters>
+                <class>Tutorial_L4E2Echoparameters_Helper</class>
+            </tutorial_l4e2echoparameters>
+        </helpers>
+        <blocks>
+            <tutorial_l4e2echoparameters>
+                <class>Tutorial_L4E2Echoparameters_Block</class>
+            </tutorial_l4e2echoparameters>
+            <catalog>
+                <rewrite>
+                    <product_view>Tutorial_L4E2Echoparameters_Block_Catalog_Product_View</product_view>
+                </rewrite>
+            </catalog>
+            <page>
+                <rewrite>
+                    <html_breadcrumbs>Tutorial_L4E2Echoparameters_Block_Page_Html_Breadcrumbs</html_breadcrumbs>
+                </rewrite>
+            </page>
+        </blocks>
+    </global>
+    <frontend>
+        <routers>
+            <Tutorial_L4E2Echoparameters>
+                <use>standard</use>
+                <args>
+                    <frontName>l4e2echoparameters</frontName>
+                    <module>Tutorial_L4E2Echoparameters</module>
+                </args>
+            </Tutorial_L4E2Echoparameters>
+        </routers>
+    </frontend>
+</config>

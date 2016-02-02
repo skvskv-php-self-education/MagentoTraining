@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <modules>
+        <Tutorial_X0401Excercise>
+            <version>0.0.1.0</version>
+            <innerVersion>0</innerVersion>
+        </Tutorial_X0401Excercise>
+    </modules>
+    <global>
+        <models>
+            <tutorial_x0401excercise>
+                <class>Tutorial_X0401Excercise_Model</class>
+            </tutorial_x0401excercise>
+        </models>
+        <helpers>
+            <tutorial_x0401excercise>
+                <class>Tutorial_X0401Excercise_Helper</class>
+            </tutorial_x0401excercise>
+        </helpers>
+        <blocks>
+            <tutorial_x0401excercise>
+                <class>Tutorial_X0401Excercise_Block</class>
+            </tutorial_x0401excercise>
+        </blocks>
+    </global>
+    <frontend>
+        <routers>
+            <Tutorial_X0401Excercise>
+                <use>standard</use>
+                <args>
+                    <frontName>x0401e</frontName>
+                    <module>Tutorial_X0401Excercise</module>
+                </args>
+            </Tutorial_X0401Excercise>
+        </routers>
+    </frontend>
+</config>
