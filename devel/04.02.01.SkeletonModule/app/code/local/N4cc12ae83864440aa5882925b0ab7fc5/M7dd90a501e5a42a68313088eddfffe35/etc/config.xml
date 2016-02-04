@@ -3,8 +3,8 @@
 <config>
     <modules>
         <N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4>
-            <version>0.0.1.0</version>
-            <innerVersion>0</innerVersion>
+            <version>0.0.2.5</version>
+            <innerVersion>8</innerVersion>
         </N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4>
     </modules>
     <global>
@@ -26,6 +26,7 @@
     </global>
     <frontend>
         <routers>
+            <!-- Down here are just unique nodes, naming convention does not matter -->
             <N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4>
                 <use>standard</use>
                 <args>
@@ -34,5 +35,15 @@
                 </args>
             </N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4>
         </routers>
+        <layout>
+            <updates>
+                <!-- Down here are just unique nodes, naming convention does not matter -->
+                <!-- Yet if you specify a node already existing somewhere, you'll be overriding it -->
+                <!-- ... or it'll override your settings, depends on loading ordel ;-)  -->
+                <n4cc12ae83864440aa5882925b0ab7fc5infile0fae8298b00345ac9926a5cf7778dec4_m7dd90a501e5a42a68313088eddfffe35infile0fae8298b00345ac9926a5cf7778dec4>
+                    <file>N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4/custom.xml</file>
+                </n4cc12ae83864440aa5882925b0ab7fc5infile0fae8298b00345ac9926a5cf7778dec4_m7dd90a501e5a42a68313088eddfffe35infile0fae8298b00345ac9926a5cf7778dec4>
+            </updates>
+        </layout>
     </frontend>
 </config>

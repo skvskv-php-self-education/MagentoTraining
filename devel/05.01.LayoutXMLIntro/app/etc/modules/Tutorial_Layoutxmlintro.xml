@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Tutorial_Layoutxmlintro.xml -->
+<config>
+    <modules>
+        <!-- Note the <NAMESPACE_MODULENAME> node below -->
+        <Tutorial_Layoutxmlintro>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+            </depends>
+        </Tutorial_Layoutxmlintro>
+    </modules>
+</config>
