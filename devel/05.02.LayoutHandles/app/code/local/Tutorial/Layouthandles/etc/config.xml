@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <modules>
+        <Tutorial_Layouthandles>
+            <version>0.0.2.6</version>
+            <innerVersion>9</innerVersion>
+        </Tutorial_Layouthandles>
+    </modules>
+    <global>
+        <models>
+            <tutorial_layouthandles>
+                <class>Tutorial_Layouthandles_Model</class>
+            </tutorial_layouthandles>
+        </models>
+        <helpers>
+            <tutorial_layouthandles>
+                <class>Tutorial_Layouthandles_Helper</class>
+            </tutorial_layouthandles>
+        </helpers>
+        <blocks>
+            <tutorial_layouthandles>
+                <class>Tutorial_Layouthandles_Block</class>
+            </tutorial_layouthandles>
+        </blocks>
+    </global>
+    <frontend>
+        <routers>
+            <!-- Down here are just unique nodes, naming convention does not matter -->
+            <Tutorial_Layouthandles>
+                <use>standard</use>
+                <args>
+                    <frontName>layouthandles</frontName>
+                    <module>Tutorial_Layouthandles</module>
+                </args>
+            </Tutorial_Layouthandles>
+        </routers>
+        <layout>
+            <updates>
+                <!-- Down here are just unique nodes, naming convention does not matter -->
+                <!-- Yet if you specify a node already existing somewhere, you'll be overriding it -->
+                <!-- ... or it'll override your settings, depends on loading ordel ;-)  -->
+                <tutorial_layouthandles>
+                    <file>Tutorial_Layouthandles/custom.xml</file>
+                </tutorial_layouthandles>
+            </updates>
+        </layout>
+    </frontend>
+</config>

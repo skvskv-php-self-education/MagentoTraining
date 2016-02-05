@@ -38,7 +38,14 @@
             <!-- It's like cd to a directory and create a file there -->
             <block type="core/text" name="justrandomblock">    <!-- Just for simplicity, to not have a template file -->
                 <action method="setText">
-                    <arg>That's a text set within a layout xml file XD</arg>
+                    <arr>
+                        <one>rghgh</one>
+                        <two>qtyqeyeh</two>
+                        <three>qeh6w</three>
+                    </arr>
+                    <arg1>That's a text set within a layout xml file XD!!!</arg1>
+                    <arg2>More bullshit in a row!</arg2>
+                    <arg3>wtehwth  wjwrtjwryj wrtjwrjwr wrj wryj</arg3>
                 </action>
             </block>
         </reference>

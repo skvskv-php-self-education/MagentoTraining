@@ -21,9 +21,9 @@
     <THEME_..._..._...>  -  <THEME_frontend_rwd_default>, <THEME_frontend_rwd_dyslexia>, etc.
                             The suffix is Areaname_Packagename_Themename.
 
-    <[Full Action Name]>  -  <catalog_product_view>, <N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4_index_layout>, etc
+    <[Full Action Name]>  -  <catalog_product_view>, <Tutorial_Layouthandles_index_layout>, etc
                              The entity is RouteName_controllername_actionname.
-                             Here RouteNames are catalog, N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4
+                             Here RouteNames are catalog, Tutorial_Layouthandles
                              RouteName is exactly what one defines in config.xml under <routers> node
 
 
