@@ -3,8 +3,8 @@
 <config>
     <modules>
         <N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4>
-            <version>0.0.2.6</version>
-            <innerVersion>9</innerVersion>
+            <version>0.0.2.7</version>
+            <innerVersion>10</innerVersion>
         </N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4>
     </modules>
     <global>
@@ -26,14 +26,18 @@
     </global>
     <frontend>
         <routers>
-            <!-- Down here are just unique nodes, naming convention does not matter -->
-            <N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4>
+            <!--
+                Down here are just unique node, naming convention does not matter.
+                Though be sure the html body class would contain  n4cc12ae83864440aa5882925b0ab7fc5infile0fae8298b00345ac9926a5cf7778dec4m7dd90a501e5a42a68313088eddfffe35infile0fae8298b00345ac9926a5cf7778dec4route-[controllername]-[actionname]
+                and there would be an update handle n4cc12ae83864440aa5882925b0ab7fc5infile0fae8298b00345ac9926a5cf7778dec4m7dd90a501e5a42a68313088eddfffe35infile0fae8298b00345ac9926a5cf7778dec4route_[controllername]_[actionname]
+            -->
+            <N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4Route>
                 <use>standard</use>
                 <args>
                     <frontName>m7dd90a501e5a42a68313088eddfffe35infile0fae8298b00345ac9926a5cf7778dec4</frontName>
                     <module>N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4</module>
                 </args>
-            </N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4>
+            </N4cc12ae83864440aa5882925b0ab7fc5INFILE0fae8298b00345ac9926a5cf7778dec4_M7dd90a501e5a42a68313088eddfffe35INFILE0fae8298b00345ac9926a5cf7778dec4Route>
         </routers>
         <layout>
             <updates>

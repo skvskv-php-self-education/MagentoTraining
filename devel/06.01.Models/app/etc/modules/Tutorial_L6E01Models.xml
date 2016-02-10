@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
 
-<!-- Tutorial_Layouthandles.xml -->
+<!-- Tutorial_L6E01Models.xml -->
 <config>
-    <modules>>
-        <Tutorial_Layouthandles>
+    <modules>
+        <!-- Note the <NAMESPACE_MODULENAME> node below -->
+        <Tutorial_L6E01Models>
             <active>true</active>
             <codePool>local</codePool>
             <depends>
             </depends>
-        </Tutorial_Layouthandles>
+        </Tutorial_L6E01Models>
     </modules>
 </config>

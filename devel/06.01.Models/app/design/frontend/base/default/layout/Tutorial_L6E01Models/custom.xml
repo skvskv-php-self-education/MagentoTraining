@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
+    All XML Layout schemas are loaded and parsed at every request,
+    no matter what controller or module performs operation
+    This enables us to supply with our module a layout modification
+    for any other module or core component.
+-->
+
 <layout>
     <!--
 
@@ -14,12 +21,10 @@
     <THEME_..._..._...>  -  <THEME_frontend_rwd_default>, <THEME_frontend_rwd_dyslexia>, etc.
                             The suffix is Areaname_Packagename_Themename.
 
-    <[Full Action Name]>  -  <catalog_product_view>, <Tutorial_Layouthandles_index_layout>, etc
+    <[Full Action Name]>  -  <catalog_product_view>, <Tutorial_L6E01Models_index_layout>, etc
                              The entity is RouteName_controllername_actionname.
-                             Here RouteNames are catalog, Tutorial_Layouthandles
+                             Here RouteNames are catalog, Tutorial_L6E01Models
                              RouteName is exactly what one defines in config.xml under <routers> node
-
-
 
 
     Basic Directives.
@@ -65,7 +70,7 @@
         [after=['-'|'block.name']]      -   context of text_list parent blocks
 
         [parent='parent.name.or.alias']
-        [output='toHtml']
+        [output=toHtml'']
     >
 
 
@@ -110,9 +115,13 @@
 
 
     <!-- This is the default update handle -->
-    <!--default>
+    <default>
+            <!-- Now we address a "content" block, which happens to be declared in default XML layout -->
+            <!-- It is of text_list type, by the way, and render all its children -->
         <reference name="content">
-            <block type="core/text" name="justrandomblock">
+                <!-- Now we add the following block to the "content" block -->
+                <!-- It's like cd to a directory and create a file there -->
+            <block type="core/text" name="justrandomblock">    <!-- Just for simplicity, to not have a template file -->
                 <action method="setText">
                     <arg>That's a text set within a layout xml file XD</arg>
                 </action>
@@ -124,102 +133,29 @@
                     <ryjyjktykutd>Magento wouldn't care about extra arguments.</ryjyjktykutd>
                 </action>
             </block>
-        </reference>
-    </default -->
 
-
-    <default>
-
-        <reference name="right">
-            <action method="unsetChild"><name>right.reports.product.viewed</name></action>
-            <!--<block type="core/text" name="pizda">-->
-            <block type="tutorial_layouthandles/duptest" name="pizda">
-            <!--<block type="tutorial_layouthandles/duptest" name="pizdato">-->
-                <action method="setText">
-                    <arg>pizda</arg>
-                </action>
-            </block>
-            <action method="unsetChild"><name>pizda</name></action>
-        </reference>
-
-        <reference name="left_first">
-
-            <action method="insert">
-                <name>pizda</name>
-                <sibling>cms_menu</sibling>
-                <after>0</after>
-                <alias>pizda1</alias>
+                <!-- Call nonexistent setter of "content" block, will fall back to magic use -->
+            <action method="setSomethingNonExistent">
+                <arg>This is a string.</arg>
             </action>
-            <action method="insert">
-                <name>pizda</name>
-                <sibling>cms_menu</sibling>
-                <after>1</after>
-                <alias>pizda2</alias>
-            </action>
-
-            <action method="insert">
-                <name>right.reports.product.viewed</name>
-                <!--<sibling>cms_menu</sibling>-->
-                <sibling>pizda1</sibling>
-                <after>0</after>
-                <alias>right.reports.product.viewed1</alias>
-            </action>
-            <action method="insert">
-                <name>right.reports.product.viewed</name>
-                <!--<sibling>cms_menu</sibling>-->
-                <sibling>pizda2</sibling>
-                <after>1</after>
-                <alias>right.reports.product.viewed2</alias>
-            </action>
-
         </reference>
     </default>
 
-    <Ben_Updatehandle>
-        <block type="core/text_list" name="whatever.catually" output="toHtml">
-            <block type="core/text" name="justrandomblock">
+
+    <!-- This is a way to update a catalog product view -->
+    <catalog_product_view>
+            <!-- Now we address a "content" block, which happens to be declared in default XML layout -->
+            <!-- It is of text_list type, by the way, and render all its children -->
+        <reference name="content">
+                <!-- Now we add the following block to the "content" block -->
+                <!-- It's like cd to a directory and create a file there -->
+            <block type="core/text" name="anotherrandomblock">    <!-- Just for simplicity, to not have a template file -->
                 <action method="setText">
-                    <arg>That's a text set within a layout xml file XD</arg>
+                    <arg>That's a text set within a layout xml file!!!</arg>
                 </action>
             </block>
-            <block type="core/text" name="nextrandomblock">
-                <action method="setText">
-                    <afbgthtbtrh>Node name for argument doesn't really matter.</afbgthtbtrh>
-                    <qeh5h46u>Only first node is taken also.</qeh5h46u>
-                    <ryjyjktykutd>Magento wouldn't care about extra arguments.</ryjyjktykutd>
-                </action>
-            </block>
-        </block>
-    </Ben_Updatehandle>
-
-    <Jack_UpdateHandle>
-        <block type="core/text" name="justrandomblock" output="toHtml" >
-            <action method="setText">
-                <arg>That's Jack Update Handle ))) </arg>
-            </action>
-        </block>
-    </Jack_UpdateHandle>
-
-    <tutoriallayouthandlesroute_index_stdhandle>
-        <update handle="cool_handle" />
-    </tutoriallayouthandlesroute_index_stdhandle>
-
-    <cool_handle>
-        <block  type="core/template"
-                name="some.name"
-                output="toHtml"
-                template="Tutorial_Layouthandles/some/template.phtml">
-            <block type="core/text" name="some.textblock">
-                <action method="setText">
-                    <arg>Da child text block XD</arg>
-                </action>
-            </block>
-        </block>
-    </cool_handle>
-
-    <cms_index_index>
-        <update name="Ben_Updatehandle" />
-    </cms_index_index>
+        </reference>
+    </catalog_product_view>
 
 
 

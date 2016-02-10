@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <modules>
+        <Tutorial_L6E01Models>
+            <version>0.0.2.7</version>
+            <innerVersion>10</innerVersion>
+        </Tutorial_L6E01Models>
+    </modules>
+    <global>
+        <models>
+            <tutorial_l6e01models>
+                <class>Tutorial_L6E01Models_Model</class>
+            </tutorial_l6e01models>
+        </models>
+        <helpers>
+            <tutorial_l6e01models>
+                <class>Tutorial_L6E01Models_Helper</class>
+            </tutorial_l6e01models>
+        </helpers>
+        <blocks>
+            <tutorial_l6e01models>
+                <class>Tutorial_L6E01Models_Block</class>
+            </tutorial_l6e01models>
+        </blocks>
+    </global>
+    <frontend>
+        <routers>
+            <!--
+                Down here are just unique node, naming convention does not matter.
+                Though be sure the html body class would contain  tutoriall6e01modelsroute-[controllername]-[actionname]
+                and there would be an update handle tutoriall6e01modelsroute_[controllername]_[actionname]
+            -->
+            <Tutorial_L6E01ModelsRoute>
+                <use>standard</use>
+                <args>
+                    <frontName>l6e01models</frontName>
+                    <module>Tutorial_L6E01Models</module>
+                </args>
+            </Tutorial_L6E01ModelsRoute>
+        </routers>
+        <layout>
+            <updates>
+                <!-- Down here are just unique nodes, naming convention does not matter -->
+                <!-- Yet if you specify a node already existing somewhere, you'll be overriding it -->
+                <!-- ... or it'll override your settings, depends on loading ordel ;-)  -->
+                <tutorial_l6e01models>
+                    <file>Tutorial_L6E01Models/custom.xml</file>
+                </tutorial_l6e01models>
+            </updates>
+        </layout>
+    </frontend>
+</config>

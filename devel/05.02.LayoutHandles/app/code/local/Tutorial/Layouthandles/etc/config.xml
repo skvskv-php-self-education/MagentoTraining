@@ -27,13 +27,13 @@
     <frontend>
         <routers>
             <!-- Down here are just unique nodes, naming convention does not matter -->
-            <Tutorial_Layouthandles>
+            <TutorialLayouthandlesRoute>
                 <use>standard</use>
                 <args>
                     <frontName>layouthandles</frontName>
                     <module>Tutorial_Layouthandles</module>
                 </args>
-            </Tutorial_Layouthandles>
+            </TutorialLayouthandlesRoute>
         </routers>
         <layout>
             <updates>
